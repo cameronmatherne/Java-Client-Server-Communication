@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="314.0" prefWidth="241.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientlite.ClientController">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="63.0" minWidth="0.0" prefWidth="63.0" />
+      <ColumnConstraints maxWidth="77.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="354.0" minWidth="282.0" prefWidth="296.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="314.0" prefWidth="421.0" GridPane.columnIndex="2">
+         <children>
+            <TextField fx:id="inputToSend" layoutX="-10.0" layoutY="275.0" prefHeight="25.0" prefWidth="220.0" />
+            <Button fx:id="sendButton" layoutX="224.0" layoutY="275.0" mnemonicParsing="false" onAction="#SendText" text="Send" />
+            <TextArea fx:id="textRecieved" layoutX="-10.0" layoutY="131.0" prefHeight="137.0" prefWidth="275.0" />
+            <Button layoutX="162.0" layoutY="86.0" mnemonicParsing="false" onAction="#ConnectToServer" prefHeight="25.0" prefWidth="84.0" text="Connect" />
+            <Label layoutY="68.0" prefHeight="17.0" prefWidth="43.0" />
+            <TextField fx:id="NAME" layoutX="3.0" layoutY="86.0" prefHeight="25.0" prefWidth="147.0" promptText="Enter a username " />
+            <Label layoutX="83.0" layoutY="33.0" text="ClassChat">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
